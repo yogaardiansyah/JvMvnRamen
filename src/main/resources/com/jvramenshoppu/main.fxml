@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jvramenshoppu.MainController">
+    <children>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="830.0">
+            <children>
+                <TableView layoutX="386.0" layoutY="5.0" prefHeight="420.0" prefWidth="406.0">
+                    <columns>
+                        <TableColumn prefWidth="75.0" text="Nama Menu" />
+                        <TableColumn prefWidth="95.0" text="Kategori Menu" />
+                        <TableColumn prefWidth="91.0" text="Jumlah Menu" />
+                         <TableColumn prefWidth="108.0" text="Harga Total Menu" />
+                    </columns>
+                </TableView>
+                <Button id="logoutButton" layoutX="20.0" layoutY="438.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+                <ScrollPane layoutX="14.0" layoutY="33.0" prefHeight="190.0" prefWidth="356.0" />
+            <ScrollPane layoutX="14.0" layoutY="235.0" prefHeight="190.0" prefWidth="356.0" />
+                <Label fx:id="welcomeLabel" layoutX="14.0" layoutY="14.0" text="" />
+            <Button layoutX="646.0" layoutY="438.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="Checkout" />
+            </children>
+        </Pane>
+    </children>
+</VBox>
